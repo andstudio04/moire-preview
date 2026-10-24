@@ -1,0 +1,21 @@
+{
+  "bamboo": {
+    "name": "Kyle's Bamboo Stick",
+    "sourceFile": "Kyle_Bamboo.abr",
+    "sha256": "7337f92b906511de606789796769d20cc85f2f21382f1e5ce6cd684f7e0c8b54",
+    "presetId": "abr-4ffe1f24-d5b1-117a-9e52-e1e4d2b18d4b-563bf219",
+    "tip": [
+      541,
+      540
+    ],
+    "dualTip": [
+      183,
+      143
+    ],
+    "grain": [
+      1400,
+      1400
+    ],
+    "description": "Converted from the brush supplied by the project owner. Original masks and settings; no Photoshop rendering code."
+  }
+}
