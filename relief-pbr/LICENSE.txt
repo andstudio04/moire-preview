@@ -1,0 +1,3 @@
+Poly Haven material maps, CC0 1.0 Universal. Sources and checksums: sources.json.
+https://polyhaven.com/license
+Packed from original 1K diffuse, OpenGL normal, roughness and displacement maps.

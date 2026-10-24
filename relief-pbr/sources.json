@@ -1,0 +1,152 @@
+[
+  {
+    "id": "clay_plaster",
+    "index": 10,
+    "source": "https://polyhaven.com/a/clay_plaster",
+    "license": "CC0-1.0",
+    "resolution": 1024,
+    "maps": {
+      "Diffuse": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/clay_plaster/clay_plaster_diff_1k.jpg",
+        "md5": "aab6ac83dcf134a370279825de143c26"
+      },
+      "nor_gl": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/clay_plaster/clay_plaster_nor_gl_1k.jpg",
+        "md5": "82e9cc526a00b3b8fddf7e43c40bdb38"
+      },
+      "Rough": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/clay_plaster/clay_plaster_rough_1k.jpg",
+        "md5": "d46fdc82c0538d0905281a761c63d9cf"
+      },
+      "Displacement": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/clay_plaster/clay_plaster_disp_1k.jpg",
+        "md5": "8456f3161594b47eda0828f0deefa191"
+      }
+    }
+  },
+  {
+    "id": "rock_boulder_cracked",
+    "index": 11,
+    "source": "https://polyhaven.com/a/rock_boulder_cracked",
+    "license": "CC0-1.0",
+    "resolution": 1024,
+    "maps": {
+      "Diffuse": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_cracked/rock_boulder_cracked_diff_1k.jpg",
+        "md5": "2eee29ef1257ce79569e4be0b76cd1ad"
+      },
+      "nor_gl": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_cracked/rock_boulder_cracked_nor_gl_1k.jpg",
+        "md5": "1185717651f6fa2db0face12425d0a74"
+      },
+      "Rough": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_cracked/rock_boulder_cracked_rough_1k.jpg",
+        "md5": "8610432e3011c02abb70433f050cf651"
+      },
+      "Displacement": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_cracked/rock_boulder_cracked_disp_1k.jpg",
+        "md5": "72ffeb8afc2bcac39a2c55678827607e"
+      }
+    }
+  },
+  {
+    "id": "brown_leather",
+    "index": 12,
+    "source": "https://polyhaven.com/a/brown_leather",
+    "license": "CC0-1.0",
+    "resolution": 1024,
+    "maps": {
+      "Diffuse": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_albedo_1k.jpg",
+        "md5": "080b3bf1372766ff2c7ff121ed07b5e8"
+      },
+      "nor_gl": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_nor_gl_1k.jpg",
+        "md5": "b63ae0121a415c23d74eed0b07fc6065"
+      },
+      "Rough": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_rough_1k.jpg",
+        "md5": "0f3a0148c8d2d25fbeca67e64e79bca0"
+      },
+      "Displacement": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_disp_1k.jpg",
+        "md5": "fff4890194163eca49dd3e88f2b73b81"
+      }
+    }
+  },
+  {
+    "id": "denim_fabric",
+    "index": 13,
+    "source": "https://polyhaven.com/a/denim_fabric",
+    "license": "CC0-1.0",
+    "resolution": 1024,
+    "maps": {
+      "Diffuse": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_diff_1k.jpg",
+        "md5": "3835b5e277dd99784bfe68d985da14ae"
+      },
+      "nor_gl": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_nor_gl_1k.jpg",
+        "md5": "9008fe723671f9cb3e6d0889eab9adb0"
+      },
+      "Rough": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_rough_1k.jpg",
+        "md5": "7eebb4a6185f2e6805976bc356dd1b41"
+      },
+      "Displacement": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_disp_1k.jpg",
+        "md5": "8fa08d567fc1fd9af2bf4e8bd178e243"
+      }
+    }
+  },
+  {
+    "id": "rusty_metal_02",
+    "index": 14,
+    "source": "https://polyhaven.com/a/rusty_metal_02",
+    "license": "CC0-1.0",
+    "resolution": 1024,
+    "maps": {
+      "Diffuse": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rusty_metal_02/rusty_metal_02_diff_1k.jpg",
+        "md5": "476bff9959bc727bd4b83c0a9ac4aeaa"
+      },
+      "nor_gl": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rusty_metal_02/rusty_metal_02_nor_gl_1k.jpg",
+        "md5": "8d6dc7e26f2708ec59e2a739711c612b"
+      },
+      "Rough": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rusty_metal_02/rusty_metal_02_rough_1k.jpg",
+        "md5": "75551ad404e29489f9b75876da95a13a"
+      },
+      "Displacement": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rusty_metal_02/rusty_metal_02_disp_1k.jpg",
+        "md5": "85b632db77701153c983f16d451c650d"
+      }
+    }
+  },
+  {
+    "id": "bark_brown_02",
+    "index": 15,
+    "source": "https://polyhaven.com/a/bark_brown_02",
+    "license": "CC0-1.0",
+    "resolution": 1024,
+    "maps": {
+      "Diffuse": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_diff_1k.jpg",
+        "md5": "6669cca520594bdca19f94084984ab72"
+      },
+      "nor_gl": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_nor_gl_1k.jpg",
+        "md5": "1cad3fe0349a44df2d4d1c2859c79920"
+      },
+      "Rough": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_rough_1k.jpg",
+        "md5": "bbcde696e5b9418cdcb2abe638965417"
+      },
+      "Displacement": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_disp_1k.jpg",
+        "md5": "88dbb65ff3ade168ab5bea53b035cf82"
+      }
+    }
+  }
+]

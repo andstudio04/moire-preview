@@ -1,0 +1,1 @@
+import{t as e}from"./legacyCompatibility-iO0FDB1J.js";function t(t,n=`./`){return t=e(t),typeof t!=`string`||!t.startsWith(`/`)||t.startsWith(`//`)?t:`${n.endsWith(`/`)?n:`${n}/`}${t.slice(1)}`}export{t};
