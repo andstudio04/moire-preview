@@ -1,0 +1,1 @@
+var e=`void mainImage(out vec4 _m0,in vec2 _m1){vec4 _m2=texture(uImage,_m1/iResolution . xy);float _m3=clamp(dot(_m2 . rgb,vec3(0.2126,0.7152,0.0722)),0.0,1.0);vec4 _m4=texture(uCurveLUT,vec2(_m3,0.5));_m0=vec4(mix(_m2 . rgb,_m4 . rgb,_m4 . a),_m2 . a);}`;export{e as default};

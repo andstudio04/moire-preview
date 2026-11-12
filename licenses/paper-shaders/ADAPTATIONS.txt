@@ -1,0 +1,48 @@
+Paper Shaders
+Copyright Lost Coast Labs, Inc.
+Licensed under the Apache License, Version 2.0 (see LICENSE.txt).
+Upstream: https://github.com/paper-design/shaders
+Pinned commit: 1923e9f536ea079e2a95d23291cbfacfd69d37f6
+
+Moiré adaptations, 2026-10-29:
+- Paper Texture and Water use the editor's mainImage entry point and image/UV bindings.
+- Water animation uses the editor timeline; colors use the editor's controls.
+- Paper's randomizer input uses the editor's generated noise texture.
+- Output is converted to straight alpha for the editor's filter compositing path.
+
+The original LICENSE and NOTICE are included unchanged as LICENSE.txt and NOTICE.txt.
+These adaptations are not endorsed by Paper and do not grant rights to other services' code.
+
+2026-10-29 input profile update: Moire Paper uses a newly authored deterministic
+xorshift32 RGB noise input, seed 20261029, instead of the legacy texture helper.
+Its Three.js texture adapter and LUT helpers are documented separately in
+docs/rights-transition/INPUTS.md. This can change the paper texture appearance.
+Upstream filter code, copyright, LICENSE and NOTICE are retained.
+
+2026-10-29 composition profile update: Moire Paper and Water now use the newly
+authored moire-compositor-v1 wrapper for new effects only. It uses fragment
+coordinates, premultiplied filter-result interpolation, W3C mathematical blend
+definitions, canvas transforms and masks. This may change sampling or edge
+pixels relative to the unpublished stage03 prototype. The adapted filter kernels
+and original LICENSE/NOTICE remain unchanged. Details: docs/rights-transition/COMPOSITOR.md.
+
+2026-10-29/30 printing and refraction integration:
+- Image Dithering and Fluted Glass are newly imported from the same pinned
+  official commit, with original source hashes in SOURCE_PRINT_GLASS.json.
+- Adapted entry point, image/UV/resolution/color bindings and editor transforms.
+- Dither has source-pixel cell sizing, editor UV orientation and original input alpha.
+- Glass uses straight-alpha output, premultiplied Amount interpolation and
+  source-pixel blur sizing. Keep input matte clips alpha by default; Refracted
+  edges retains the original material/edge behavior. Amount zero is a bypass.
+- The package NOTICE has an additional copyright line. Its complete original
+  text is included as PACKAGE-NOTICE.txt, alongside the unchanged root NOTICE.txt
+  and LICENSE.txt. This also preserves package notice coverage for Paper/Water.
+Details and scope: docs/rights-transition/PRINT_GLASS.md.
+
+2026-10-30 Moiré halftone integration (commit 1923e9f536ea079e2a95d23291cbfacfd69d37f6):
+- Added halftone-cmyk.ts and halftone-dots.ts with shader-utils.ts from the official source.
+- Adapted entry point, image/UV/aspect/color bindings and CMYK plate opacity controls.
+- Renamed CMYK noise sampler to noiseLUT, supplied by the newly authored Moiré input profile.
+- Added printAmount bypass/interpolation and preserved exact input alpha instead of the opaque paper output.
+- Retained normalized cell scale; no claim of legacy parameter/pixel identity.
+- Original LICENSE, root NOTICE and package NOTICE preserved; details in HALFTONE.md.

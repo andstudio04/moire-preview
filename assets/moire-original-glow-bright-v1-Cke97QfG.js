@@ -1,0 +1,1 @@
+var e=`uniform float glowThreshold;uniform float glowKnee;void mainImage(out vec4 _m0,in vec2 _m1){vec3 _m2=sharedToLinear(texture(uImage,_m1/iResolution . xy). rgb);float _m3=max(_m2 . r,max(_m2 . g,_m2 . b));float _m4=max(glowKnee,1e-3)*0.5;_m0=vec4(sqrt(_m2*smoothstep(glowThreshold-_m4,glowThreshold+_m4,_m3)),1.0);}`;export{e as default};
