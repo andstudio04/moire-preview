@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform sampler2D iChannel2;uniform float imageAspectRatio;uniform float imageFit;void mainImage(out vec4 fragColor,in vec2 _m0){vec2 _m1=max(iResolution . xy,vec2(1.0));vec2 _m2=_m0/_m1-0.5;float _m3=_m1 . x/_m1 . y;float _m4=max(imageAspectRatio,1e-3);vec2 _m5=_m3>_m4?vec2(_m4/_m3,1.0):vec2(1.0,_m3/_m4);vec2 _m6=imageFit>1.5?vec2(1.0):imageFit>0.5?_m5/min(_m5 . x,_m5 . y):_m5;vec2 _m7=_m2/_m6+0.5;vec4 _m8=texture(iChannel2,vec2(_m7 . x,1.0-_m7 . y));bool _m9=all(greaterThanEqual(_m7,vec2(0.0)))&&all(lessThanEqual(_m7,vec2(1.0)));fragColor=_m9?_m8:vec4(0.0);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

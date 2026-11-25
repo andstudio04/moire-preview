@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float zoomCentreX;uniform float zoomCentreY;uniform float zoomStrength;void mainImage(out vec4 _m0,in vec2 _m1){vec2 _m2=_m1/iResolution . xy;vec4 _m3=texture(uImage,_m2);float _m4=-log(max(1.0-clamp(zoomStrength,0.0,1.0),0.01))/32.0;if(_m4*length((_m2-vec2(zoomCentreX,zoomCentreY))*iResolution . xy)<0.5){_m0=_m3;return;}vec2 _m5=vec2(zoomCentreX,zoomCentreY);vec3 _m6=vec3(0.0);float _m7=0.0;for(int _m8=0;_m8<32;_m8++){float _m9=exp(_m4*(0.5-(float(_m8)+0.5)/32.0));_m6+=sharedImageLinear(_m5+(_m2-_m5)*_m9). rgb*_m9;_m7+=_m9;}_m0=vec4(sharedToDisplay(_m6/_m7),_m3 . a);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

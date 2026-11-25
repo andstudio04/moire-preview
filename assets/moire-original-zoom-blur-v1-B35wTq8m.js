@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float zoomCentreX;uniform float zoomCentreY;uniform float zoomStrength;uniform float zoomBurst;void mainImage(out vec4 _m0,in vec2 _m1){vec2 _m2=_m1/iResolution . xy;vec4 _m3=texture(uImage,_m2);float _m4=clamp(zoomStrength,0.0,1.0);float _m5=-log(max(1.0-_m4,0.01));vec2 _m6=vec2(zoomCentreX,zoomCentreY);vec3 _m7=vec3(0.0);float _m8=0.0;for(int _m9=0;_m9<32;_m9++){float _ma=exp(-_m5*(float(_m9)+0.5)/32.0);float _mb=_m4>0.0?(1.0-_ma)/_m4:0.0;float _mc=mix(1.0,3.0*(1.0-_mb)*(1.0-_mb),clamp(zoomBurst,0.0,1.0))*_ma;_m7+=sharedImageLinear(_m6+(_m2-_m6)*_ma). rgb*_mc;_m8+=_mc;}_m0=vec4(sharedToDisplay(_m7/max(_m8,1e-6)),_m3 . a);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float motionAngle;uniform float motionLength;void mainImage(out vec4 _m0,in vec2 _m1){vec2 _m2=_m1/iResolution . xy;vec4 _m3=texture(uImage,_m2);float _m4=radians(motionAngle);float _m5=motionLength*0.01*max(iResolution . x,iResolution . y)/32.0;if(_m5<0.5){_m0=_m3;return;}vec2 _m6=vec2(cos(_m4),sin(_m4))*_m5/iResolution . xy;vec3 _m7=vec3(0.0);for(int _m8=0;_m8<32;_m8++)_m7+=sharedImageLinear(_m2+_m6*((float(_m8)+0.5)/32.0-0.5)). rgb;_m0=vec4(sharedToDisplay(_m7/32.0),_m3 . a);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

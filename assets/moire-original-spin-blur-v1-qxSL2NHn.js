@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float spinCentreX;uniform float spinCentreY;uniform float spinAngle;void mainImage(out vec4 _m0,in vec2 _m1){vec2 _m2=_m1/iResolution . xy;vec4 _m3=texture(uImage,_m2);float _m4=iResolution . x/max(iResolution . y,1.0);vec2 _m5=vec2(spinCentreX,spinCentreY);vec2 _m6=(_m2-_m5)*vec2(_m4,1.0);vec3 _m7=vec3(0.0);for(int _m8=0;_m8<32;_m8++){float _m9=radians(spinAngle)*((float(_m8)+0.5)/32.0-0.5);vec2 _ma=mat2(cos(_m9),sin(_m9),-sin(_m9),cos(_m9))*_m6;_m7+=sharedImageLinear(_ma/vec2(_m4,1.0)+_m5). rgb;}_m0=vec4(sharedToDisplay(_m7/32.0),_m3 . a);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

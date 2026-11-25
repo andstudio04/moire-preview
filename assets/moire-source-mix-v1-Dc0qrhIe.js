@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform sampler2D uMoireSource;uniform float restoreAmount;uniform float tonalFocus;void mainImage(out vec4 _m0,in vec2 _m1){vec2 _m2=_m1/iResolution . xy;vec4 _m3=texture(uImage,_m2);vec4 _m4=texture(uMoireSource,_m2);float _m5=dot(_m3 . rgb,vec3(0.2126,0.7152,0.0722));float _m6=clamp(tonalFocus,-1.0,1.0);float _m7=_m6<0.0?(1.0-_m5)*(1.0-_m5):_m5*_m5;float _m8=clamp(restoreAmount,0.0,1.0)*mix(1.0,_m7,abs(_m6));float _m9=mix(_m3 . a,_m4 . a,_m8);vec3 _ma=mix(_m3 . rgb*_m3 . a,_m4 . rgb*_m4 . a,_m8);_m0=vec4(_m9>1e-8?_ma/_m9:vec3(0.0),_m9);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

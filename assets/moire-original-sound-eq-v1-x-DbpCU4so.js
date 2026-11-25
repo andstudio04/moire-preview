@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float eqScale;float _mc(vec2 _m0,float _m1){if(_m1<0.5)return texture(uImage,_m0). r;float _m2=_m1/8.0,_m3=0.0,_m4=0.0;for(int _m5=-20;_m5<=20;_m5++){float _m6=float(_m5)*_m2;float _m7=exp(-0.5*_m6*_m6/(_m1*_m1));_m3+=texture(uImage,clamp(_m0+vec2(_m6/iResolution . x,0.0),0.5/iResolution . xy,1.0-0.5/iResolution . xy)). r*_m7;_m4+=_m7;}return _m3/_m4;}void mainImage(out vec4 _m8,in vec2 _m9){vec2 _ma=_m9/iResolution . xy;float _mb=max(eqScale,0.1)*max(iResolution . x,iResolution . y);_m8=vec4(_mc(_ma,0.0012*_mb),_mc(_ma,0.004*_mb),_mc(_ma,0.013*_mb),_mc(_ma,0.042*_mb));}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

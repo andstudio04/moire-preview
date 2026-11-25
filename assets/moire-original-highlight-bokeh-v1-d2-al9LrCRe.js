@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float bokehRadius;float _m9(){return max(0.25*bokehRadius*0.01*max(iResolution . x,iResolution . y),2.0);}void mainImage(out vec4 _m0,in vec2 _m1){vec2 _m2=_m1/iResolution . xy;float _m3=0.76536686*_m9();vec2 _m4=vec2(cos(1.57079633),sin(1.57079633))/iResolution . xy;int _m5=int(clamp(ceil(_m3)+1.0,2.0,64.0));float _m6=texture(uImage,clamp(_m2+vec2(0.0),0.0,1.0)). r;for(int _m7=0;_m7<64;_m7++){if(_m7>=_m5)break;float _m8=texture(uImage,clamp(_m2+_m4*(float(_m7)/float(_m5-1)-0.5)*_m3,0.0,1.0)). r;_m6=max(_m6,_m8);}_m0=vec4(_m6,texture(uImage,_m2). g,0.0,1.0);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

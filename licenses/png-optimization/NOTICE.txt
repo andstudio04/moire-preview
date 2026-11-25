@@ -1,0 +1,4 @@
+PNG compression uses @jsquash/oxipng 2.3.0 (Apache-2.0), derived from Google Squoosh, and Oxipng (MIT). Alpha optimization is disabled.
+https://github.com/jamsinclair/jSquash/tree/main/packages/oxipng
+https://github.com/oxipng/oxipng
+Original JavaScript license headers are preserved.

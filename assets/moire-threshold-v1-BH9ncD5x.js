@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float thresholdPoint;uniform float softness;uniform vec3 darkColor;uniform vec3 lightColor;void mainImage(out vec4 _m0,in vec2 _m1){vec4 _m2=texture(uImage,_m1/iResolution . xy);float _m3=dot(_m2 . rgb,vec3(0.2126,0.7152,0.0722));float _m4=softness>1e-5?smoothstep(thresholdPoint-softness,thresholdPoint+softness,_m3):step(thresholdPoint,_m3);_m0=vec4((mix(darkColor,lightColor,_m4)),_m2 . a);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};

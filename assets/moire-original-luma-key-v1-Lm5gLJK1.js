@@ -1,0 +1,4 @@
+/*! Copyright (c) 2026 Moiré. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+var e=`uniform float keyLow;uniform float keyHigh;uniform float keySoftness;uniform float keyInvert;uniform float keyView;uniform float lumaFill;uniform vec3 lumaFillColour;void mainImage(out vec4 _m0,in vec2 _m1){vec4 _m2=texture(uImage,_m1/iResolution . xy);float _m3=dot(_m2 . rgb,vec3(0.2126,0.7152,0.0722));float _m4=max(keySoftness,1e-3);float _m5=smoothstep(keyLow-_m4,keyLow+_m4,_m3)*(1.0-smoothstep(keyHigh-_m4,keyHigh+_m4,_m3));float _m6=keyInvert>0.5?_m5:1.0-_m5;float _m7=_m2 . a*(_m6);_m0=keyView>0.5?vec4(vec3(_m7),1.0):lumaFill>0.5?vec4(mix(lumaFillColour,_m2 . rgb,_m7),_m2 . a):vec4(_m2 . rgb,_m7);}
+/* Copyright (c) 2026 Moire. All rights reserved. Copying, extracting, or reusing this code is not permitted. See the Terms of Service. */
+`;export{e as default};
